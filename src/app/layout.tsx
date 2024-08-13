@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Suspense } from "react";
-import Loading from "./loading";
 import Navbar from "@/components/Navbar";
+import RootLoader from "./loading";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,7 +24,7 @@ export default function RootLayout({
           <div className="flex flex-col h-screen">
             <Navbar />
             <div className="mt-12 mx-auto flex items-center justify-center">
-              <Suspense fallback={<Loading />}>{children}</Suspense>
+              <Suspense fallback={<RootLoader />}>{children}</Suspense>
             </div>
           </div>
         </div>

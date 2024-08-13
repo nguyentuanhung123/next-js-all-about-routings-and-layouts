@@ -22,7 +22,7 @@ const Navbar = () => {
                 <Link href="/blog">Blog</Link>
             </div>
             <div className="flex gap-4 text-sm">
-                <Link href="/login">Chat</Link>
+                <Link href="/login">Login</Link>
                 <Link href="/register">Register</Link>
             </div>
         </div>

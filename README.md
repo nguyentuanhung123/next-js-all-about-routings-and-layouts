@@ -34,3 +34,19 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Sự khác biệt giữa template và layout khi được các page dùng chung
+- Template khi ta chuyển trang sẽ bị re-render (dữ liệu nhập từ input ví dụ sẽ bị mất khi chuyển trang)
+- Layout khi chuyển trang sẽ không bị re-render (dữ liệu nhập từ input ví dụ sẽ không bị mất khi chuyển trang)
+
+## Folder có tên @ ở trước như @model và folder có tên được đặt trong dấu () nằm trong folder app thì sẽ bị bỏ qua và không được tính là 1 URL nhưng folder bên trong chúng vẫn sẽ được tính là 1 URL
+
+## Lưu ý ở bài 12, ta có các thẻ Link hướng đến đường dẫn con như bên dưới để chỉ thay đổi tiêu đề trong Sidebar chứ không chuyển đổi sang các trang như những bài trước. 
+
+- http://localhost:3000/12parallel/first
+- http://localhost:3000/12parallel/first
+
+- Thì khi refresh nó sẽ chạy file not-found.tsx trong thư mục gốc
+- Để giải quyết điều này, hãy xem bài 13
+
+## Bài 13, ở Sidebar ta cũng có các thẻ link như bài 12 ở trên, sự khác biệt chính là để đảm bảo khi refesh màn hình vẫn ở trang đó, ta phải thêm file default.tsx trong các folder cùng cấp và cha của nó là @model và 13paralleldefaults để có thể có hiệu quả như mong muốn
