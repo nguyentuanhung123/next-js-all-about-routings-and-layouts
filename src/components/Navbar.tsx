@@ -15,7 +15,9 @@ const Navbar = () => {
                 <Link href="/11error">Error</Link>
                 <Link href="/12parallel">Parallel</Link>
                 <Link href="/13paralleldefaults">Parallel_defaults</Link>
-                <Link href="/14interceptlevelroute">Intercept_root_route</Link>
+                <Link href="/14InterceptRoutes">Intercept_routes</Link>
+                <Link href="/15Interceptlevelroute">Intercept_root_route</Link>
+                <Link href="/16Practice">Practice</Link>
             </div>
             <div className="flex gap-4 text-sm">
                 <Link href="/chat">Chat</Link>
